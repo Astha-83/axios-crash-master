@@ -99,7 +99,7 @@ function errorHandling() {
   })
   .then(res => showOutput(res))
   .catch(err => {
-    if (err.response) {
+    if (err.response) {  
       // Server responded with a status other than 200 range
       console.log(err.response.data);
       console.log(err.response.status);
